@@ -1,4 +1,4 @@
-FROM arm32v7/openjdk:8-jdk-slim-stretch
+FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ARG JAR_FILE
 ADD ${JAR_FILE} app.jar
